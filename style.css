@@ -8356,6 +8356,7 @@ ul.u-text li:last-child {
 }
 img.u-image,
 .u-video-poster {
+  border-radius: 10px;
   overflow: hidden;
 }
 .u-back-image.u-image-contain,
@@ -19599,7 +19600,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stardos Stencil', cursive;
+  font-family: 'MuseoModerno', cursive;
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -33618,7 +33619,9 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-table-alt-custom-color-6 tr:nth-child(even)
         {
             color: #ffffff;
-            background-color: rgba(53,52,64,0.9);
+            background-color: #1d1e26;
+            
+            
         }
 
         .u-button-style.u-custom-color-6,
@@ -34917,3 +34920,9 @@ a.u-link.u-text-hover-grey-90:hover {
  html { font-size: 16px; }
  /*end-variables base-font-size*/
 
+.BTN1Ver{
+  width: 100%;
+  background-color: #f2d5d5;
+  height: 3%;
+  border-radius: 10px;
+}

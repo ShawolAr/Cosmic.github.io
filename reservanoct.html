@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <link rel="icon" href="images/Fondo-favicon.png" type="image/png" sizes="20x20">
     
-    <title>Login</title>
+    <title>Reservas Nocturnas</title>
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="HOME.css" media="screen">
     <link rel="stylesheet" href="Contacto.css" media="screen">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="reserva.css">
     <script class="u-script" type="text/javascript" src="javascript/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="javascript/java.js" defer=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
   </head>
-  <body class="u-body"><header class="u-clearfix u-header u-image u-sticky u-header" id="NavBar" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+  <body style="height: auto;" class="u-body"><header class="u-clearfix u-header u-image u-sticky u-header" id="NavBar" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <a href="index.html#sec-3333" data-page-id="38275570" class="u-image u-logo u-image-1" data-image-width="578" data-image-height="717">
           <img src="images/Logo-nav-bar.png" class="u-logo-image u-logo-image-1" data-image-width="129.9615">
         </a>
@@ -68,40 +69,48 @@
       </div></header>
 
 
+
+
+
       
     <section class="u-align-center u-clearfix u-image u-section-1" id="sec-fbd1" data-image-width="850" data-image-height="478">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-align-center u-container-style u-custom-color-1 u-expanded-width u-group u-opacity u-opacity-50 u-radius-30 u-shape-round u-group-1">
           <div class="u-container-layout u-valign-middle u-container-layout-1">
-            <h1 style="color: #F2D5D5;">
-                INICIAR SESIÓN
-            </h1>
+            <h2 style="color: #F2D5D5;">
+                Reservas Nocturnas
+            </h2>
             
-            <div id="contenedor">
+            <div id="contenedorres">
             
-                <div id="contenedorcentrado">
-                    <div id="login" style="border-radius: 20px;">
-                        <form id="loginform">
-                            <label style="border-radius: 20px;" for="usuario">Usuario</label>
-                            <input style="border-radius: 20px;" id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                <div class="contenedorcentrado1">
+                    <div id="reserva" class="containerres" style="border-radius: 20px; text-align: center;">
+                        <form method="get" action="#">
                             
-                            <label style="border-radius: 20px;" for="password">Contraseña<span></span></label>
-                            <input style="border-radius: 20px;" id="password" type="password" placeholder="Contraseña" name="password" required>
+                            <p><label style="border-radius: 20px;" for="hab">Seleccionar Visita</label>
+                            <select class="reservahab" id="hab">
+                                <option>Visita Completa HABITACION DOBLE (Cena + Alojamiento + Desayuno) Valor $30000 por persona mayor a 5 años de edad</option>
+                                <option>Visita Completa HABITACIÓN SIMPLE (Cena + Alojamiento + Desayuno) Valor $35000 por persona mayor a 5 años de edad</option>
+                                <option>Visita Media Pensión HABITACIÓN DOBLE (Alojamiento + Desayuno) Valor $25000 por persona mayor a 5 años de edad</option>
+                                <option>Visita Media Pensión HABITACIÓN SIMPLE (Alojamiento + Desayuno) Valor $20000 por persona mayor a 5 años de edad</option>
+                            </select></p>
+
+                            <p><label style="border-radius: 20px;" for="hab">Seleccionar Horario</label>
+                            <select class="reservahab" id="hab">
+                                <option>Ingreso: 19:30hs</option>
+                                <option>Ingreso: 20:30hs</option>
+                                <option>Ingreso: 21:30hs</option>
+                                <option>Ingreso: 22:30hs</option>
+                                <option>Ingreso: 23:30hs</option>
+                                <option>Ingreso: 00:30hs</option>
+                            </select></p>
                             
-                            <button style="border-radius: 20px;" type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
+                            
+                            <button class="btnreserva" type="submit">Seleccionar Fecha</button>
                         </form>
                         
                     </div>
-                    <div id="derecho">
-                        
-                        <hr>
-                        <div class="pie-form">
-                            <a href="#">¿Perdiste tu contraseña?</a>
-                            <a href="#">¿No tienes Cuenta? Regístrate</a>
-                            <hr>
-                            <a href="index.html">Volver</a>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
 
@@ -111,6 +120,10 @@
       </div>
     </section>
     
+
+
+
+
     
     <footer class="u-align-center u-clearfix u-footer u-image u-footer" id="Foot" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center-sm u-align-center-xs u-text u-text-custom-color-2 u-text-1">Todos los derechos reservados 2023. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución.</p>

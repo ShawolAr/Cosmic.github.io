@@ -119,6 +119,9 @@
 }.u-section-2 {
   background-image: none;
   min-height: 507px;
+  
+    padding-right: 35px;
+  
 }
 
 .u-section-2 .u-text-1 {
@@ -141,6 +144,9 @@
 
 .u-section-2 .u-container-layout-1 {
   padding: 28px 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .u-section-2 .u-image-1 {
@@ -156,6 +162,9 @@
 
 .u-section-2 .u-container-layout-2 {
   padding: 28px 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .u-section-2 .u-image-2 {
@@ -171,6 +180,9 @@
 
 .u-section-2 .u-container-layout-3 {
   padding: 28px 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .u-section-2 .u-image-3 {
@@ -186,6 +198,9 @@
 
 .u-section-2 .u-container-layout-4 {
   padding: 28px 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .u-section-2 .u-image-4 {
@@ -212,8 +227,16 @@
   width: 40px;
   height: 40px;
 }
+.modal-body img{
+  width: 360px;
+}
 
 @media (max-width: 1199px) {
+
+  .u-section-2{
+    padding-right: 0px;
+  }
+ 
   .u-section-2 .u-text-1 {
     margin-top: 21px;
   }
@@ -244,10 +267,10 @@
   }
 }
 
+
+
 @media (max-width: 991px) {
-  .u-section-2 {
-    min-height: 100vh;
-  }
+  
 
   .u-section-2 .u-text-1 {
     width: auto;
@@ -442,9 +465,17 @@
   .u-section-2 .u-text-5 {
     margin-top: 45px;
   }
-}.u-section-3 {
+
+  .modal-body img{
+    width: 260px;
+  }
+}
+
+
+.u-section-3 {
   background-image: url("images/desktop-wallpaper-dark-night-sky-background-dark-night-star.jpg");
   background-position: 50% 50%;
+  
 }
 
 .u-section-3 .u-sheet-1 {
@@ -496,7 +527,7 @@
 .u-section-3 .u-text-4 {
   text-transform: uppercase;
   font-size: 1.25rem;
-  margin: -241px 722px 0 55px;
+  margin: -241px 722px 0 45px;
 }
 
 .u-section-3 .u-text-5 {
@@ -512,9 +543,11 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   background-image: none;
-  align-self: center;
+  justify-content: center;
   margin: 493px auto 0 0;
-  padding: 12px 204px 12px 203px;
+  padding-left: 97px;
+    padding-right: 97px;
+  
 }
 
 .u-section-3 .u-btn-2 {
@@ -524,8 +557,8 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   margin: -46px 0 60px auto;
-  padding: 12px 204px 12px 203px;
-}
+  padding-left: 97px;
+  padding-right: 97px;}
 
 @media (max-width: 1199px) {
   .u-section-3 .u-sheet-1 {
@@ -581,14 +614,15 @@
 
   .u-section-3 .u-btn-1 {
     margin-top: 475px;
-    padding-left: 166px;
-    padding-right: 166px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
   }
 
   .u-section-3 .u-btn-2 {
     margin-left: 540px;
-    padding-left: 166px;
-    padding-right: 166px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -619,6 +653,7 @@
   .u-section-3 .u-text-2 {
     margin-top: -299px;
     margin-right: 374px;
+    padding-bottom: 30px;
     margin-left: 24px;
   }
 
@@ -649,7 +684,7 @@
   }
 
   .u-section-3 .u-text-5 {
-    margin-top: -60px;
+    margin-top: -70px;
     margin-right: 14px;
     margin-left: 384px;
   }
@@ -657,14 +692,14 @@
   .u-section-3 .u-btn-1 {
     margin-top: 467px;
     margin-left: 10px;
-    padding-left: 141px;
-    padding-right: 141px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   .u-section-3 .u-btn-2 {
     margin-left: auto;
-    padding-left: 141px;
-    padding-right: 141px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
@@ -732,8 +767,8 @@
     font-size: 1.125rem;
     margin-top: -251px;
     margin-left: auto;
-    padding-right: 133px;
-    padding-left: 132px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .u-section-3 .u-btn-2 {
@@ -741,8 +776,8 @@
     border-style: solid;
     margin-top: 634px;
     margin-right: auto;
-    padding-right: 133px;
-    padding-left: 132px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -818,23 +853,27 @@
   .u-section-3 .u-btn-1 {
     margin-top: -267px;
     margin-right: 0;
-    padding-right: 128px;
-    padding-left: 127px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .u-section-3 .u-btn-2 {
     margin-top: 631px;
     margin-right: 0;
-    padding-right: 128px;
-    padding-left: 127px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-}.u-section-4 {
+}
+.u-section-4 {
   background-image: none;
   min-height: 540px;
+  
+    padding-right: 35px;
+  
 }
 
 .u-section-4 .u-blog-1 {
-  width: 1300px;
+  width: 100%;
   margin: 78px 0 0;
 }
 
@@ -929,6 +968,8 @@
 @media (max-width: 1199px) {
   .u-section-4 {
     min-height: 507px;
+    
+    padding-right: 0px;
   }
 
   .u-section-4 .u-blog-1 {
@@ -1251,7 +1292,7 @@
 
 .u-section-5 .u-text-5 {
   text-transform: uppercase;
-  font-size: 1.875rem;
+  font-size: 1.765rem;
   margin: -68px 16px 0 128px;
 }
 
@@ -1474,7 +1515,7 @@
   }
 
   .u-section-5 .u-text-7 {
-    margin: 101px 206px 60px 390px;
+    margin: 101px 206px 60px 377px;
   }
 }
 
@@ -1654,6 +1695,24 @@
     margin-top: 125px;
     margin-left: 155px;
   }
+}
+
+
+
+.botonreserv{
+  background-color: #bf8173;
+  color: #111111;
+  border-radius: 20px;
+  font-weight: 500;
+  border-width: 0px;
+  cursor: pointer;
+  padding:10px 20px 10px 20px;
+}
+
+.botonreserv:hover{
+  background-image: url(images/desktop-wallpaper-dark-night-sky-background-dark-night-star.jpg);
+  color: #f2d5d5;
+  transform: scale(1.2);
 }
 
 
