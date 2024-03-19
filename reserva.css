@@ -1,12 +1,21 @@
 
 .contenedorcentrado1{
-    width: 80%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 .containerres{
-   width: 100%;
+   width: 80%;
    
-    display: flex;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+
     
 }
 .u-body{
@@ -15,6 +24,7 @@
 .containerres label{
     font-size: 1.1rem;
     font-weight: 500;
+    
 }
 .reservahab{
     color: #000;
@@ -27,30 +37,72 @@
     font-size: 15px;
     text-align: center;
     color: #000;
+    
     width: 100%;
+}
+.reservahab:hover{
+    background-color: #f2d5d5;
+    font-weight: 500;
+}
+
+#sec-fbd1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.containercont{
+
+    display: flex;
+   margin-top: 0px;
+   margin-bottom: 0px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 70% !important;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+#containerres{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+     width: 60%;
+     align-items: center;
+     background-color: #bf8173;
+     flex-wrap: wrap;
+     border-radius: 20px;
 }
 
 .btnreserva{
     border-radius: 20px;
+    font-weight: 400;
+    border: transparent;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    color: #1d1e26 ;
 }
 .btnreserva:hover{
-background-color: #1d1e26;
+background-color: #f2d5d5;
+font-weight: 500;
 }
 
 #reserva {
     width: 100%;
   
-    padding: 50px 30px 90px 30px;
+    
+
+    padding: 0px 0px 40px 0px;
+
     background-color: #bf8173;
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
     
     
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    
-    box-sizing: border-box;
     
     opacity: 1;
     filter: alpha(opacity=1);
@@ -64,22 +116,41 @@ background-color: #1d1e26;
     margin: 0;
     padding: 0;
     
-    min-height: 500px;
+    
     width: 100%;
-    height: 80%;
+    
     
     background-image: url(../imagenes/textura.png);
     background-position: center;
     background-size: cover;
 }
+@media (max-width: 991px) {
 
+    
+
+
+    #containerres {
+        width: 80%;
+}}
 @media (max-width: 575px) {
     .reservahab{
         font-size: 13px;}
     .reservahab option{
         font-size: 13px;
         }
+        #containerres{
+            width: 90%;
+        }
+ p {
+    
+    text-align: center !important;
+    
+    
+ }
+ .containercont{
+    width: 80% !important;
 
+ }
 }
 
 

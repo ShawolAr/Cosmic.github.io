@@ -8,8 +8,8 @@
     <title>Reservas Nocturnas</title>
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="HOME.css" media="screen">
-    <link rel="stylesheet" href="Contacto.css" media="screen">
-    <link rel="stylesheet" href="login.css">
+    
+    
     <link rel="stylesheet" href="reserva.css">
     <script class="u-script" type="text/javascript" src="javascript/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="javascript/java.js" defer=""></script>
@@ -26,7 +26,8 @@
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
   </head>
-  <body style="height: auto;" class="u-body"><header class="u-clearfix u-header u-image u-sticky u-header" id="NavBar" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+  <body style="height: auto;" class="u-body">
+    <header class="u-clearfix u-header u-image u-sticky u-header" id="NavBar" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <a href="index.html#sec-3333" data-page-id="38275570" class="u-image u-logo u-image-1" data-image-width="578" data-image-height="717">
           <img src="images/Logo-nav-bar.png" class="u-logo-image u-logo-image-1" data-image-width="129.9615">
         </a>
@@ -74,9 +75,9 @@
 
       
     <section class="u-align-center u-clearfix u-image u-section-1" id="sec-fbd1" data-image-width="850" data-image-height="478">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-align-center u-container-style u-custom-color-1 u-expanded-width u-group u-opacity u-opacity-50 u-radius-30 u-shape-round u-group-1">
-          <div class="u-container-layout u-valign-middle u-container-layout-1">
+      <div class="containercont">
+        <div id="containerres" class="">
+          
             <h2 style="color: #F2D5D5;">
                 Reservas Nocturnas
             </h2>
@@ -87,16 +88,18 @@
                     <div id="reserva" class="containerres" style="border-radius: 20px; text-align: center;">
                         <form method="get" action="#">
                             
-                            <p><label style="border-radius: 20px;" for="hab">Seleccionar Visita</label>
-                            <select class="reservahab" id="hab">
+                            <p style="text-align: center;" ><label style="border-radius: 20px;" for="hab">Seleccionar Visita</label>
+                            <select class="reservahab" id="hab" aria-label="Default select example" >
+                                <option>Seleccionar Visita</option>
                                 <option>Visita Completa HABITACION DOBLE (Cena + Alojamiento + Desayuno) Valor $30000 por persona mayor a 5 años de edad</option>
                                 <option>Visita Completa HABITACIÓN SIMPLE (Cena + Alojamiento + Desayuno) Valor $35000 por persona mayor a 5 años de edad</option>
                                 <option>Visita Media Pensión HABITACIÓN DOBLE (Alojamiento + Desayuno) Valor $25000 por persona mayor a 5 años de edad</option>
                                 <option>Visita Media Pensión HABITACIÓN SIMPLE (Alojamiento + Desayuno) Valor $20000 por persona mayor a 5 años de edad</option>
                             </select></p>
 
-                            <p><label style="border-radius: 20px;" for="hab">Seleccionar Horario</label>
-                            <select class="reservahab" id="hab">
+                            <p style="text-align: center;"><label style="border-radius: 20px;" for="hab">Seleccionar Horario</label>
+                            <select class="reservahab" id="hab" aria-label="Default select example">
+                              <option>Seleccionar Horario</option>
                                 <option>Ingreso: 19:30hs</option>
                                 <option>Ingreso: 20:30hs</option>
                                 <option>Ingreso: 21:30hs</option>
@@ -104,9 +107,10 @@
                                 <option>Ingreso: 23:30hs</option>
                                 <option>Ingreso: 00:30hs</option>
                             </select></p>
+                               
                             
-                            
-                            <button class="btnreserva" type="submit">Seleccionar Fecha</button>
+                           <p style="text-align: center;"><label>Seleccionar Fecha</label></p>
+                            <input class="btnreserva" type="date" id="fecha" name="fecha">
                         </form>
                         
                     </div>
@@ -115,7 +119,7 @@
             </div>
 
 
-          </div>
+          
         </div>
       </div>
     </section>
@@ -125,7 +129,7 @@
 
 
     
-    <footer class="u-align-center u-clearfix u-footer u-image u-footer" id="Foot" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-sheet-1">
+    <footer style="top: 30px;" class="u-align-center u-clearfix u-footer u-image u-footer" id="Foot" data-image-width="850" data-image-height="478"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center-sm u-align-center-xs u-text u-text-custom-color-2 u-text-1">Todos los derechos reservados 2023. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución.</p>
         <p class="u-text u-text-custom-color-2 u-text-2">SEGUINOS EN NUESTRAS REDES</p>
         <img class="u-image u-image-default u-image-1" src="images/Logo-footer.png" alt="" data-image-width="749" data-image-height="374" data-href="index.html#sec-3333" data-page-id="38275570">
@@ -134,6 +138,22 @@
         <img class="u-image u-image-default u-preserve-proportions u-image-4" src="images/youtube.png" alt="" data-image-width="512" data-image-height="512" data-href="https://www.youtube.com/" data-target="_blank">
         <img class="u-image u-image-default u-preserve-proportions u-image-5" src="images/facebook.png" alt="" data-image-width="512" data-image-height="512" data-href="https://www.facebook.com/home.php" data-target="_blank">
       </div></footer>
-
+      <script>
+        var fecha = document.getElementById("fecha");
+        
+        fecha.addEventListener("click", function() {
+          
+          calendario.setAttribute("type", "date");
+          calendario.setAttribute("id", "calendario");
+          calendario.setAttribute("name", "calendario");
+        
+          document.body.appendChild(calendario);
+        
+          calendario.addEventListener("change", function() {
+            var fechaSeleccionada = calendario.value;
+            alert("La fecha seleccionada es: " + fechaSeleccionada);
+          });
+        });
+        </script>
   </body>
 </html>

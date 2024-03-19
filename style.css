@@ -8464,7 +8464,7 @@ section.u-image,
 }
 .u-container-layout {
   position: relative;
-  flex: 1;
+ 
   max-width: 100%;
 }
 .u-inner-container-layout,
@@ -8499,7 +8499,7 @@ section.u-image,
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .u-expanded-width-md {
-    width: 100% !important;
+    
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
@@ -16455,7 +16455,9 @@ div.u-video,
   width: 0;
 }
 .u-enable-responsive .menu-collapse {
-  display: block;
+  top: 20px;
+    display: block;
+    position: relative;
 }
 .u-enable-responsive:not(.open) .u-sidenav {
   border: none;
@@ -31083,7 +31085,7 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-base[class*="u
 .u-button-style:hover > .u-text-hover-palette-2-base svg,
 .u-button-style.u-button-style.active > .u-text-active-palette-2-base svg,
 .u-text-hover-palette-2-base:focus svg {
-  fill: #db545a;
+  fill: #bf8173;
 }
 .u-link.u-text-palette-2-base:hover {
   color: #d63b42 !important;
@@ -34341,7 +34343,8 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h1:not(.u-title)
         {
-        font-weight: 400;
+        font-weight: 500;
+        text-align: center;
         font-size: 3rem;
         line-height: 1.1;
         margin-top: 20px;
@@ -34403,7 +34406,17 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
+        text-align: justify;
+        width: 360px;
         }
+
+        @media (max-width:575px){
+          p:not(.u-text-variant) {
+            width: 260px;
+          }
+        }
+
+
         .u-btn
         {
         margin-top: 20px;
@@ -34613,6 +34626,10 @@ a.u-link.u-text-hover-grey-90:hover {
   max-width: 130px;
   max-height: 130px;
 }
+@media (max-width:575px){
+   .u-header .u-logo-image-1{
+    max-width: 70px;
+   }}
 
 .u-header .u-menu-1 {
   margin: -94px 0 38px auto;
@@ -34687,9 +34704,14 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-header .u-menu-1 {
     margin-top: -84px;
   }
+
+  .u-header .u-nav-2 {
+    font-size: 0.9rem;}
+
+
 }
 .u-footer {
-  background-image: url("images/desktop-wallpaper-dark-night-sky-background-dark-night-star.jpg");
+  background-color: #f2d5d5;
   background-position: 50% 50%;
 }
 
@@ -34699,11 +34721,16 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-text-1 {
   font-size: 0.875rem;
+  color: #353440 !important;
+  font-weight: 500 !important;
   margin: 24px 388px 0 324px;
 }
 
 .u-footer .u-text-2 {
   font-size: 1.25rem;
+  text-align: center !important;
+  color: #353440 !important;
+  font-weight: 500 !important;
   margin: -88px 0 0 758px;
 }
 
