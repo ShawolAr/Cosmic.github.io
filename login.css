@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     
-    min-height: 500px;
+    
     width: 100%;
     height: 80%;
     
@@ -48,7 +48,7 @@ body {
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-     
+    z-index: 9;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -57,8 +57,7 @@ body {
 /* formulario de login */
 #login {
     width: 100%;
-    max-width: 320px;
-    min-width: 320px;
+    
     padding: 30px 30px 50px 30px;
     background-color: #bf8173;
     -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
@@ -144,7 +143,7 @@ body {
     /*display: flex;
     align-items:center;
     justify-content:center;*/
-    
+    z-index: 9;
     text-align: center;
     width: 100%;
     
@@ -187,6 +186,38 @@ hr {
 .pie-form a:hover {
     color: #f2d5d5;
 }
+#sec-fbd1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+#containerlog{
+    display: flex;
+   margin-top: 0px;
+   margin-bottom: 0px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 70% !important;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+.containercont{
+
+    display: flex;
+   margin-top: 0px;
+   margin-bottom: 0px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 70% !important;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
 /* seccion de la derecha */
 /* seccion de la derecha */
 
@@ -195,7 +226,7 @@ hr {
 @media all and (max-width: 775px)
 {
     #contenedorcentrado {
-        flex-direction:column-reverse;
+        flex-direction:column;
 
         min-width: 380px;
         max-width: 900px;
@@ -215,6 +246,8 @@ hr {
     
     #login {
         margin: 0 auto;
+        padding: 20px;
+        width: 70%;
     }
     
     #derecho {
@@ -225,7 +258,14 @@ hr {
         text-align: left;
         display: inline-block;
         width: 100px;
+        
     }
+    h1{
+        font-size: 1.45rem !important;
+    }
+    .pie-form {
+        font-size: 16px;}
+
 }
 /* ajustar a pantallas con ancho menor o igual a 775px; */
 /* ajustar a pantallas con ancho menor o igual a 775px; */
